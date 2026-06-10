@@ -3,3 +3,4 @@ dist
 .env
 .DS_Store
 .github-token
+vite.config.js.timestamp-*.mjs

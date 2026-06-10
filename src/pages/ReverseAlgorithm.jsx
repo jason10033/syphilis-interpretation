@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Disclaimer from '../components/Disclaimer'
 
 const NODE_INFO = {
   step1: {
@@ -160,12 +159,8 @@ export default function ReverseAlgorithm() {
   const [activeNode, setActiveNode] = useState(null)
 
   return (
-    <div style={{ maxWidth: 520, margin: '0 auto', padding: '28px 16px 56px' }}>
-      <div style={{ marginBottom: 24 }}>
-        <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 6 }}>Reverse Sequence</p>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>Treponemal-First Algorithm</h1>
-        <p style={{ fontSize: 13, color: 'var(--text-secondary)' }}>Start with EIA or CIA treponemal screen. Tap any test node to learn what it detects and why it exists in the sequence.</p>
-      </div>
+    <>
+      <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16 }}>Start with EIA or CIA treponemal screen. Tap any test node to learn what it detects and why it exists in the sequence.</p>
 
       <div style={{
         padding: '10px 14px',
@@ -307,7 +302,6 @@ export default function ReverseAlgorithm() {
         </div>
       </div>
 
-      <Disclaimer source="Workowski KA et al. MMWR Recomm Rep 2021;70(4):1-187." />
-    </div>
+    </>
   )
 }

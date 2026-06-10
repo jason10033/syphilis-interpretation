@@ -10,28 +10,28 @@ const REFERENCES = [
     citation: 'Workowski KA, Bachmann LH, Chan PA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021.',
     journal: 'MMWR Recomm Rep',
     year: '2021',
-    detail: '2021;70(4):1–187.',
+    detail: '2021;70(4):1-187.',
   },
   {
     id: 2,
     citation: 'Ghanem KG, Ram S, Rice PA. The Modern Epidemic of Syphilis.',
     journal: 'N Engl J Med',
     year: '2020',
-    detail: '2020;382(9):845–854.',
+    detail: '2020;382(9):845-854.',
   },
   {
     id: 3,
     citation: 'Hamill MM, Ghanem KG, Tuddenham S. State-of-the-Art Review: Neurosyphilis.',
     journal: 'Clin Infect Dis',
     year: '2024',
-    detail: '2024;78(5):e57–68.',
+    detail: '2024;78(5):e57-68.',
   },
   {
     id: 4,
     citation: 'Flores JM, Rochat R, Stafford IA, Heiselman C, Nachman S, Zucker J. State-of-the-Art Review: Congenital Syphilis in the Modern Era: Current Strategies and Future Directions.',
     journal: 'Clin Infect Dis',
     year: '2025',
-    detail: '2025;81(6):1023–1035.',
+    detail: '2025;81(6):1023-1035.',
   },
 ]
 
@@ -118,7 +118,7 @@ export default function About() {
       </div>
 
       {/* Clinical disclaimer */}
-      <Disclaimer source="Workowski KA et al. MMWR Recomm Rep 2021;70(4):1-187." />
+      <Disclaimer />
 
       {/* NNPTC Clinical Consultation */}
       <a

@@ -279,7 +279,7 @@ export default function Stages() {
         </div>
       </div>
 
-      <Disclaimer source="Workowski KA et al. MMWR Recomm Rep 2021;70(4):1-187." />
+      <Disclaimer />
     </div>
   )
 }

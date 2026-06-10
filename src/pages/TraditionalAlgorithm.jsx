@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import Disclaimer from '../components/Disclaimer'
 
 const NODE_INFO = {
   step1: {
-    title: 'Nontreponemal Test (RPR, VDRL, or TRUST)',
+    title: 'Nontreponemal Test (RPR or VDRL)',
     detects: 'Antibodies to cardiolipin-lecithin-cholesterol antigen released by cells damaged by T. pallidum. Not specific to syphilis.',
     reactive: 'A reactive result triggers reflex treponemal confirmation. Report with quantitative titer (e.g., RPR 1:8). Titer tracks disease activity and treatment response.',
     falsePositive: 'Biologic false positives occur in pregnancy, autoimmune disease (lupus), IV drug use, acute viral infections, and older age. Rate is roughly 1-2% in low-risk populations.',
@@ -153,12 +152,8 @@ export default function TraditionalAlgorithm() {
   const [activeNode, setActiveNode] = useState(null)
 
   return (
-    <div style={{ maxWidth: 520, margin: '0 auto', padding: '28px 16px 56px' }}>
-      <div style={{ marginBottom: 24 }}>
-        <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 6 }}>Traditional Sequence</p>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>Nontreponemal-First Algorithm</h1>
-        <p style={{ fontSize: 13, color: 'var(--text-secondary)' }}>Start with RPR, VDRL, or TRUST. Tap any test node to learn what it detects and why it exists in the sequence.</p>
-      </div>
+    <>
+      <p style={{ fontSize: 13, color: 'var(--text-secondary)', marginBottom: 16 }}>Start with RPR or VDRL. Tap any test node to learn what it detects and why it exists in the sequence.</p>
 
       <div style={{
         padding: '10px 14px',
@@ -178,7 +173,7 @@ export default function TraditionalAlgorithm() {
         nodeKey="step1"
         step={1}
         label="Nontreponemal Test"
-        sublabel="RPR, VDRL, or TRUST"
+        sublabel="RPR or VDRL"
         activeNode={activeNode}
         onToggle={setActiveNode}
       />
@@ -278,7 +273,6 @@ export default function TraditionalAlgorithm() {
         ))}
       </div>
 
-      <Disclaimer source="Workowski KA et al. MMWR Recomm Rep 2021;70(4):1-187." />
-    </div>
+    </>
   )
 }

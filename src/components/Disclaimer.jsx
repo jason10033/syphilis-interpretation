@@ -1,4 +1,4 @@
-export default function Disclaimer({ source }) {
+export default function Disclaimer() {
   return (
     <div style={{
       marginTop: 32,

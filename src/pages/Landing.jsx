@@ -17,7 +17,7 @@ const ROUTES = [
     icon: '+',
     label: 'My patient has a reactive RPR',
     sublabel: 'Traditional algorithm: nontreponemal screen first',
-    path: '/traditional',
+    path: '/algorithms?seq=traditional',
     color: 'var(--reactive)',
     bg: 'var(--reactive-bg)',
     border: 'var(--reactive-border)',
@@ -27,7 +27,7 @@ const ROUTES = [
     icon: 'T',
     label: 'My patient has a reactive treponemal screen (EIA or CIA)',
     sublabel: 'Reverse algorithm: treponemal screen first',
-    path: '/reverse',
+    path: '/algorithms?seq=reverse',
     color: 'var(--crimson)',
     bg: 'var(--crimson-bg)',
     border: 'var(--crimson-border)',
@@ -140,7 +140,7 @@ export default function Landing() {
         ))}
       </div>
 
-      <Disclaimer source="Based on CDC 2021 STI Treatment Guidelines (MMWR Recomm Rep 2021;70(4):1-187)." />
+      <Disclaimer />
     </div>
   )
 }

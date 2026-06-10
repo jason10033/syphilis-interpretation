@@ -286,7 +286,7 @@ export default function Scenarios() {
         {SCENARIOS.map(s => <ScenarioCard key={s.id} scenario={s} />)}
       </div>
 
-      <Disclaimer source="Based on CDC 2021 STI Treatment Guidelines (MMWR Recomm Rep 2021;70(4):1-187)." />
+      <Disclaimer />
     </div>
   )
 }
