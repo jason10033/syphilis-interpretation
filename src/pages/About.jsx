@@ -142,7 +142,7 @@ export default function About() {
       >
         <div>
           <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 2 }}>Have a complicated clinical question?</div>
-          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.75)' }}>NNPTC Clinical Consultation — free expert guidance for providers</div>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.75)' }}>NNPTC Clinical Consultation: free expert guidance for providers</div>
         </div>
         <span style={{ fontSize: 20, opacity: 0.8 }}>→</span>
       </a>

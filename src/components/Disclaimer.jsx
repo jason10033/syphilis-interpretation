@@ -16,7 +16,6 @@ export default function Disclaimer({ source }) {
       }}>Clinical Disclaimer: </span>
       <span style={{ fontSize: 11, color: '#78350F', lineHeight: 1.5 }}>
         This tool is intended as an educational reference for licensed clinicians. It does not replace clinical judgment. Results should always be interpreted in the context of individual patient history and risk.
-        {source && <> {source}</>}
       </span>
     </div>
   )
